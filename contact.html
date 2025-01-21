@@ -7,70 +7,172 @@
     <meta name="keywords" content="eco-friendly, contact us, sustainable living, EcoLife">
     <meta name="author" content="EcoLife Solutions Team">
     <title>Contact Us - EcoLife Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Contact EcoLife Solutions</h1>
-        <p>We’re here to help! Feel free to reach out with any questions or feedback.</p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-leaf fa-2x text-success"></i>
+                    <span class="ms-2">EcoLife Solutions</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="encryption.html">Encryption Demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Hero Section -->
+        <div class="hero-section text-center py-5 bg-success text-white">
+            <h1 class="display-4">Contact EcoLife Solutions</h1>
+            <p class="lead">We’re here to help! Feel free to reach out with any questions or feedback.</p>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Get in Touch</h2>
-            <p>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Contact Form Section -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <p class="text-center">
                 Have questions about our products or your order? Want to learn more about sustainable living? 
                 Use the form below to send us a message, and we’ll get back to you as soon as possible.
             </p>
-            <form action="#" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
+            <form class="row g-3" action="#" method="POST">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </div>
             </form>
         </section>
 
-        <section>
-            <h2>Contact Details</h2>
-            <ul>
-                <li><strong>Email:</strong> support@ecolifesolutions.com</li>
-                <li><strong>Phone:</strong> +1 (800) 555-1234</li>
-                <li><strong>Address:</strong> 123 Green Way, Sustainability City, SC 12345</li>
-                <li><strong>Business Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM</li>
-            </ul>
+        <!-- Contact Details Section -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Contact Details</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Email</h5>
+                            <p class="card-text">support@ecolifesolutions.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Phone</h5>
+                            <p class="card-text">+1 (800) 555-1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Address</h5>
+                            <p class="card-text">123 Green Way, Sustainability City, SC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Business Hours</h5>
+                            <p class="card-text">Monday to Friday, 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Follow Us Section -->
         <section>
-            <h2>Follow Us</h2>
-            <p>Stay updated with our latest products and eco-friendly tips:</p>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/ecolifesolutions" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com/ecolifesolutions" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com/ecolifesolutions" target="_blank">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/company/ecolifesolutions" target="_blank">LinkedIn</a></li>
+            <h2 class="text-center mb-4">Follow Us</h2>
+            <p class="text-center">Stay updated with our latest products and eco-friendly tips:</p>
+            <ul class="social-links list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/ecolifesolutions" target="_blank" class="text-success">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com/ecolifesolutions" target="_blank" class="text-success">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/ecolifesolutions" target="_blank" class="text-success">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/company/ecolifesolutions" target="_blank" class="text-success">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                </li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 EcoLife Solutions. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2024 EcoLife Solutions. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://facebook.com/ecolifesolutions" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://twitter.com/ecolifesolutions" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://instagram.com/ecolifesolutions" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>

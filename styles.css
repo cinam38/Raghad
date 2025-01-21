@@ -262,3 +262,23 @@ footer p {
         margin: 10px 0;
     }
 }
+.hero-section {
+    background: linear-gradient(to right, #28a745, #218838);
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #28a745 !important;
+}
